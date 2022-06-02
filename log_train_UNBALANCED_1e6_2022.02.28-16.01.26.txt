@@ -1,0 +1,114 @@
+2022-02-28 16:01:53.573364: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2022-02-28 16:01:53.665628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:e3:00.0 name: NVIDIA A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2022-02-28 16:01:53.668826: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2022-02-28 16:01:53.676346: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2022-02-28 16:01:53.679695: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2022-02-28 16:01:53.681643: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2022-02-28 16:01:53.684988: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2022-02-28 16:01:53.687442: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2022-02-28 16:01:53.693402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2022-02-28 16:01:53.696951: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2022-02-28 16:02:41.459542: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2022-02-28 16:02:41.467135: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2600000000 Hz
+2022-02-28 16:02:41.467588: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5627e23ffb20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-02-28 16:02:41.467605: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-02-28 16:02:41.468777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-02-28 16:02:41.468784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      
+2.2.0
+Num GPUs Available:  1
+None
+image_side_length: 256
+batch_size: 32
+epoch_num: 30
+test_size: 0.1
+seed: 107
+validation_split_rate: 0.1
+smoke dense
+Found 30168 non-validated image filenames.
+Found 30168 non-validated image filenames.
+Found 30168 non-validated image filenames.
+Found 3351 non-validated image filenames.
+Found 3351 non-validated image filenames.
+Found 3351 non-validated image filenames.
+Epoch 1/30
+
+Epoch 00001: val_loss improved from inf to 0.12248, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 24705s - loss: 0.1256 - sparse_top_k_categorical_accuracy: 0.4586 - sparse_categorical_crossentropy: 1.2559 - val_loss: 0.1225 - val_sparse_top_k_categorical_accuracy: 0.4646 - val_sparse_categorical_crossentropy: 1.2248
+Epoch 2/30
+
+Epoch 00002: val_loss improved from 0.12248 to 0.11594, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 24256s - loss: 0.1204 - sparse_top_k_categorical_accuracy: 0.4860 - sparse_categorical_crossentropy: 1.2038 - val_loss: 0.1159 - val_sparse_top_k_categorical_accuracy: 0.4991 - val_sparse_categorical_crossentropy: 1.1594
+Epoch 3/30
+
+Epoch 00003: val_loss improved from 0.11594 to 0.11446, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 22762s - loss: 0.1171 - sparse_top_k_categorical_accuracy: 0.4993 - sparse_categorical_crossentropy: 1.1709 - val_loss: 0.1145 - val_sparse_top_k_categorical_accuracy: 0.5048 - val_sparse_categorical_crossentropy: 1.1446
+Epoch 4/30
+
+Epoch 00004: val_loss improved from 0.11446 to 0.11413, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 23584s - loss: 0.1145 - sparse_top_k_categorical_accuracy: 0.5096 - sparse_categorical_crossentropy: 1.1451 - val_loss: 0.1141 - val_sparse_top_k_categorical_accuracy: 0.5063 - val_sparse_categorical_crossentropy: 1.1413
+Epoch 5/30
+
+Epoch 00005: val_loss improved from 0.11413 to 0.11147, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 25651s - loss: 0.1126 - sparse_top_k_categorical_accuracy: 0.5180 - sparse_categorical_crossentropy: 1.1261 - val_loss: 0.1115 - val_sparse_top_k_categorical_accuracy: 0.5139 - val_sparse_categorical_crossentropy: 1.1147
+Epoch 6/30
+
+Epoch 00006: val_loss did not improve from 0.11147
+943/943 - 25568s - loss: 0.1105 - sparse_top_k_categorical_accuracy: 0.5254 - sparse_categorical_crossentropy: 1.1052 - val_loss: 0.1152 - val_sparse_top_k_categorical_accuracy: 0.5017 - val_sparse_categorical_crossentropy: 1.1525
+Epoch 7/30
+
+Epoch 00007: val_loss improved from 0.11147 to 0.11065, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 26077s - loss: 0.1090 - sparse_top_k_categorical_accuracy: 0.5309 - sparse_categorical_crossentropy: 1.0903 - val_loss: 0.1106 - val_sparse_top_k_categorical_accuracy: 0.5216 - val_sparse_categorical_crossentropy: 1.1065
+Epoch 8/30
+
+Epoch 00008: val_loss did not improve from 0.11065
+943/943 - 26843s - loss: 0.1076 - sparse_top_k_categorical_accuracy: 0.5371 - sparse_categorical_crossentropy: 1.0759 - val_loss: 0.1109 - val_sparse_top_k_categorical_accuracy: 0.5170 - val_sparse_categorical_crossentropy: 1.1093
+Epoch 9/30
+
+Epoch 00009: val_loss improved from 0.11065 to 0.10952, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 26548s - loss: 0.1063 - sparse_top_k_categorical_accuracy: 0.5423 - sparse_categorical_crossentropy: 1.0625 - val_loss: 0.1095 - val_sparse_top_k_categorical_accuracy: 0.5255 - val_sparse_categorical_crossentropy: 1.0952
+Epoch 10/30
+
+Epoch 00010: val_loss did not improve from 0.10952
+943/943 - 25839s - loss: 0.1048 - sparse_top_k_categorical_accuracy: 0.5481 - sparse_categorical_crossentropy: 1.0481 - val_loss: 0.1109 - val_sparse_top_k_categorical_accuracy: 0.5242 - val_sparse_categorical_crossentropy: 1.1089
+Epoch 11/30
+
+Epoch 00011: val_loss improved from 0.10952 to 0.10884, saving model to dense-by_date-256-107_UNBALANCE1e6.hdf5
+943/943 - 26080s - loss: 0.1040 - sparse_top_k_categorical_accuracy: 0.5518 - sparse_categorical_crossentropy: 1.0401 - val_loss: 0.1088 - val_sparse_top_k_categorical_accuracy: 0.5283 - val_sparse_categorical_crossentropy: 1.0884
+Epoch 12/30
+
+Epoch 00012: val_loss did not improve from 0.10884
+943/943 - 25827s - loss: 0.1023 - sparse_top_k_categorical_accuracy: 0.5585 - sparse_categorical_crossentropy: 1.0226 - val_loss: 0.1107 - val_sparse_top_k_categorical_accuracy: 0.5274 - val_sparse_categorical_crossentropy: 1.1066
+Epoch 13/30
+
+Epoch 00013: val_loss did not improve from 0.10884
+943/943 - 25587s - loss: 0.1012 - sparse_top_k_categorical_accuracy: 0.5633 - sparse_categorical_crossentropy: 1.0121 - val_loss: 0.1125 - val_sparse_top_k_categorical_accuracy: 0.5085 - val_sparse_categorical_crossentropy: 1.1246
+Epoch 14/30
+
+Epoch 00014: val_loss did not improve from 0.10884
+943/943 - 25476s - loss: 0.1002 - sparse_top_k_categorical_accuracy: 0.5677 - sparse_categorical_crossentropy: 1.0019 - val_loss: 0.1119 - val_sparse_top_k_categorical_accuracy: 0.5122 - val_sparse_categorical_crossentropy: 1.1190
+Epoch 15/30
+
+Epoch 00015: val_loss did not improve from 0.10884
+943/943 - 25053s - loss: 0.0988 - sparse_top_k_categorical_accuracy: 0.5740 - sparse_categorical_crossentropy: 0.9881 - val_loss: 0.1103 - val_sparse_top_k_categorical_accuracy: 0.5262 - val_sparse_categorical_crossentropy: 1.1035
+Epoch 16/30
+
+Epoch 00016: val_loss did not improve from 0.10884
+943/943 - 23104s - loss: 0.0975 - sparse_top_k_categorical_accuracy: 0.5797 - sparse_categorical_crossentropy: 0.9754 - val_loss: 0.1136 - val_sparse_top_k_categorical_accuracy: 0.5177 - val_sparse_categorical_crossentropy: 1.1358
+Epoch 17/30
+
+Epoch 00017: val_loss did not improve from 0.10884
+943/943 - 23525s - loss: 0.0964 - sparse_top_k_categorical_accuracy: 0.5850 - sparse_categorical_crossentropy: 0.9645 - val_loss: 0.1104 - val_sparse_top_k_categorical_accuracy: 0.5225 - val_sparse_categorical_crossentropy: 1.1043
+Epoch 18/30
+
+Epoch 00018: val_loss did not improve from 0.10884
+943/943 - 23524s - loss: 0.0949 - sparse_top_k_categorical_accuracy: 0.5916 - sparse_categorical_crossentropy: 0.9492 - val_loss: 0.1119 - val_sparse_top_k_categorical_accuracy: 0.5256 - val_sparse_categorical_crossentropy: 1.1192
+Epoch 19/30
+
+Epoch 00019: val_loss did not improve from 0.10884
+943/943 - 23529s - loss: 0.0940 - sparse_top_k_categorical_accuracy: 0.5964 - sparse_categorical_crossentropy: 0.9400 - val_loss: 0.1142 - val_sparse_top_k_categorical_accuracy: 0.5154 - val_sparse_categorical_crossentropy: 1.1419
+Epoch 20/30
+
+Epoch 00020: val_loss did not improve from 0.10884
+943/943 - 23533s - loss: 0.0923 - sparse_top_k_categorical_accuracy: 0.6040 - sparse_categorical_crossentropy: 0.9234 - val_loss: 0.1114 - val_sparse_top_k_categorical_accuracy: 0.5240 - val_sparse_categorical_crossentropy: 1.1140
